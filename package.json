@@ -10,6 +10,8 @@
   "author": "Michael Wanyoike",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
     "jquery": "^3.3.1",
     "semantic-ui-css": "^2.3.1"
   }
