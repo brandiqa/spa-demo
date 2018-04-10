@@ -4,22 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
+  <link rel="stylesheet" href="../node_modules/semantic-ui-css/semantic.min.css">
   <title>SPA Demo</title>
 </head>
 <body>
   <div class="ui container">
-    <div class="ui three item menu">
-      <a class="active item">Currencies</a>
-      <a class="item">Exchange Rate</a>
-      <a class="item">Historical Data</a>
+    <div class="ui menu">
+      <div class="header item">
+        <i class="money bill alternate outline icon"></i>
+        SPA Demo
+      </div>
+      <a class="active item">
+        Currency Rates
+      </a>
+      <a class="item">
+        Currency Conversion
+      </a>
+      <a class="item">
+        Historical Data
+      </a>
     </div>
     <div id="app"></div>
   </div>
 
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/semantic-ui-css/semantic.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
