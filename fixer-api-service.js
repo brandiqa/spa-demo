@@ -6,7 +6,7 @@ const api = axios.create({
   params: {
     access_key: process.env.API_KEY
   },
-  timeout: 5000,
+  timeout: process.env.TIMEOUT || 5000,
 });
 
 module.exports = {
