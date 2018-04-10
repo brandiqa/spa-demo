@@ -21,6 +21,8 @@ You'll need to register an [account](https://fixer.io/signup/free) with fixer.io
 
 ```env
 API_KEY=<insert api access key here>
+PORT=35729
+TIMEOUT=5000
 ```
 
 1. Clone repository

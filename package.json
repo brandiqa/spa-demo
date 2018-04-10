@@ -9,11 +9,18 @@
   "keywords": [],
   "author": "Michael Wanyoike",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brandiqa/spa-demo.git"
+  },
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
-    "semantic-ui-css": "^2.3.1"
+    "path": "^0.12.7",
+    "semantic-ui-css": "^2.3.1",
+    "tiny-lr": "^1.1.1"
   }
 }
