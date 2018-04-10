@@ -9,8 +9,7 @@ The main libraries used here are:
 - [Page](https://github.com/visionmedia/page.js/) - SPA routing
 
 You can find the tutorial this demo comes with on [Sitepoint](https://www.sitepoint.com).
-
-This application also consumes data provided by [Alphavantage](https://www.alphavantage.co).
+This application consumes data provided by [Fixer.io](https://fixer.io).
 
 ## Requirements
 
@@ -18,11 +17,16 @@ This application also consumes data provided by [Alphavantage](https://www.alpha
 
 ## Installation Steps
 
+You'll need to register an [account](https://fixer.io/signup/free) with fixer.io in order to access their **Free API Key**. After you have cloned the repository, create a new file called `.env` at the root of the project. Provide your api key inside the file like this:
+
+```env
+API_KEY=<insert api access key here>
+```
+
 1. Clone repository
 2. Run `npm install`
-3. Run `npm install -g parcel-bundler`
-4. Start server with `npm start`
-5. Visit [http://localhost:3000/](http://localhost:3000/).
+3. Start server with `npm start` or `node app-server`
+4. Visit [http://localhost:3000/](http://localhost:3000/).
 
 ## License
 
