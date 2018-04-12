@@ -7,6 +7,10 @@ window.addEventListener('load', async ()=> {
 
   // Load Currency Rates
   const response = await service.get('/rates');
-  console.log(response.data.rates)
+  const rates = response.data.rates;
 
+  // Display Rates Table
+  const rates_template = Handlebars.compile($('#rates-template').html());
+  const html = rates_template({ 'rates': rates });
+  $('#app').html(html);
 });
