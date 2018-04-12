@@ -1,8 +1,5 @@
 const dotenv = require('dotenv').config();
 const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
-const tinyLr = require('tiny-lr');
 const { getRates } = require('./fixer-api-service');
 
 const app = express();
@@ -14,14 +11,8 @@ app.get('/api/rates', async (req, res) => {
   res.send(data);
 });
 
-// Bind Express and Tiny Reload
-app
-  .use(bodyParser.urlencoded({
-    extended: true
-  }))
-  .use(bodyParser.json())
-  .use(tinyLr.middleware({ app: app }))
-  .use(express.static(path.resolve('./')))
-  .listen(port, () => {
-    console.log('listening on %d', port);
-  });
+app.use(express.static('./'));
+
+app.listen(port, () => {
+  console.log('listening on %d', port);
+});
