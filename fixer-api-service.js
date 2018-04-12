@@ -9,10 +9,12 @@ const api = axios.create({
   timeout: process.env.TIMEOUT || 5000,
 });
 
+const symbols = 'GBP,JPY,EUR,USD,AUD,KES,CNY,BTC'
+
 module.exports = {
   getRates: async () => {
     try {
-      const response = await api.get('/latest')
+      const response = await api.get(`/latest&symbols=${symbols}`);
       return response.data;
     } catch (error) {
       console.log(error)
